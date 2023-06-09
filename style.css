@@ -17,7 +17,6 @@ body {
   background-color: #222;
   /* background-color: #60b347; */
 }
-
 /* LAYOUT */
 
 header {
@@ -142,7 +141,6 @@ h1 {
     font-size: 50%;
   }
   .between {
-    position: absolute;
     top: 32rem;
   }
   .left {
@@ -167,7 +165,6 @@ h1 {
     margin-bottom: auto;
   }
   .between {
-    position: absolute;
-    top: 43rem;
+    /* top: 43rem; */
   }
 }
