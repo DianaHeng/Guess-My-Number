@@ -12,21 +12,29 @@ html {
 }
 
 body {
-  font-family: 'Press Start 2P', sans-serif;
+  font-family: 'Concert One', cursive;
   color: #eee;
   background-color: #222;
   /* background-color: #60b347; */
 }
 
 /* LAYOUT */
+
 header {
   position: relative;
-  height: 35vh;
-  border-bottom: 7px solid #eee;
+  height: 45vh;
+}
+
+#header1 {
+  margin-top: 8rem;
+  height: 200px;
+  position: relative;
+  border-bottom: 5px solid yellow;
+  padding: 50px 50px;
 }
 
 main {
-  height: 65vh;
+  height: 55vh;
   color: #eee;
   display: flex;
   align-items: center;
@@ -42,28 +50,29 @@ main {
 
 .right {
   width: 52rem;
-  font-size: 2rem;
+  font-size: 3rem;
   flex-direction: column;
   align-items: center;
 }
 
 /* ELEMENTS STYLE */
 h1 {
-  font-size: 4rem;
+  font-size: 6rem;
   text-align: center;
   position: absolute;
   width: 100%;
-  top: 52%;
+  top: 62%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-bottom: 100px;
 }
 
 .number {
   background: #eee;
   color: #333;
   border-radius: 15px;
-  font-size: 6rem;
-  width: 15rem;
+  font-size: 5rem;
+  width: 13rem;
   padding: 3rem 0rem;
   text-align: center;
   position: absolute;
@@ -73,17 +82,17 @@ h1 {
 }
 
 .between {
-  font-size: 1.4rem;
+  font-size: 2rem;
   text-align: center;
   position: absolute;
-  top: 35rem;
+  top: 30rem;
   left: 50%;
   transform: translate(-50%, 50%);
 }
 
 .again {
   position: absolute;
-  top: 2rem;
+  top: -4rem;
   right: 2rem;
   border-radius: 15px;
 }
@@ -103,6 +112,7 @@ h1 {
 }
 
 .btn {
+  margin: 15px;
   border: none;
   background-color: #eee;
   color: #222;
@@ -114,7 +124,7 @@ h1 {
 }
 
 .btn:hover {
-  background-color: #ccc;
+  background-color: rgba(255, 255, 175, 0.801);
 }
 
 .message {
@@ -124,4 +134,40 @@ h1 {
 
 .label-score {
   margin-bottom: 2rem;
+}
+
+@media (max-width: 600px) {
+  html {
+    margin-top: 15%;
+    font-size: 50%;
+  }
+  .between {
+    position: absolute;
+    top: 32rem;
+  }
+  .left {
+    margin-bottom: 150px;
+  }
+  .right {
+    margin-bottom: 180px;
+  }
+  .guess {
+    width: 70%;
+    border: 2px solid #eee;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 35%;
+  }
+  .left {
+    margin-bottom: auto;
+  }
+  .right {
+    margin-bottom: auto;
+  }
+  .between {
+    position: absolute;
+    top: 43rem;
+  }
 }
